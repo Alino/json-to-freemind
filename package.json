@@ -5,6 +5,18 @@
   "main": "app.js",
   "author": "Alexander Sadovsky",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alino/json-to-freemind"
+  },
+  "keywords": [
+    "json",
+    "freemind",
+    "convert",
+    "mindmap",
+    "cli",
+    "documentation"
+  ],
   "bin": {
     "json-to-freemind": "./cli.js"
   },
