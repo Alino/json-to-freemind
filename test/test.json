@@ -1,0 +1,37 @@
+{
+  "data": {
+    "user": {
+      "id": {
+        "type": "integer",
+        "incremental": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "password": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "cat": {
+      "id": {
+        "type": "integer",
+        "incremental": true
+      },
+      "canMeow": true
+    }
+  },
+  "abilities": {
+    "offensive": [
+      {
+        "magic": "spell attack",
+        "physical": "sword attack"
+      }
+    ],
+    "defensive": [
+      "magic armor",
+      "steal weapon"
+    ]
+  }
+}
