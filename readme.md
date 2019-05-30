@@ -1,5 +1,8 @@
 this cli tool converts a json to freemind file format (.mm)
 
+## Requirements
+node.js and npm
+
 ## Installation
 ```npm install -g json-to-freemind```
 
