@@ -1,6 +1,6 @@
 {
   "name": "json-to-freemind",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "convert json to mindmap",
   "main": "app.js",
   "author": "Alexander Sadovsky",

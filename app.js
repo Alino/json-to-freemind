@@ -40,6 +40,11 @@ function convert(json, jsonFileName) {
       parentEl = xmlDoc.createElement('node');
       parentEl.setAttribute('TEXT', key);
 
+      if (runNumber == 0) {
+        lastParentEl = parentEl;
+        topSiblings.push(parentEl);
+      }
+
       if (Array.isArray(value)) {
         value.forEach((v) => {
           if (typeof v != 'object') {
@@ -53,11 +58,6 @@ function convert(json, jsonFileName) {
           }
         })
         continue;
-      }
-
-      if (runNumber == 0) {
-        lastParentEl = parentEl;
-        topSiblings.push(parentEl);
       }
 
       if (isLastChild) {

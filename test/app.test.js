@@ -19,7 +19,14 @@ describe('#convert', () => {
     it('should convert json input to mind map output', () => {
         const jsonInput = fs.readFileSync('./test/test.json', 'utf8');
         const mindMapOutput = app.convert(jsonInput, 'test.json');
-        expect(mindMapOutput).xml.to.equal(expectedMindMapOutput)
+        expect(mindMapOutput).xml.to.equal(expectedMindMapOutput);
+    });
+
+    it('should convert json input to mind map output #2', () => {
+        const jsonInput = fs.readFileSync('./test/test2.json', 'utf8');
+        const mindMapOutput = app.convert(jsonInput, 'test2.json');
+        const expectedMindMapOutput = fs.readFileSync('./test/test2.mm', 'utf8');
+        expect(mindMapOutput).xml.to.equal(expectedMindMapOutput);
     });
 
     it('should throw an error that the json is invalid', () => {
